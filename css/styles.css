@@ -67,6 +67,11 @@ html {
 *::after {
   box-sizing: border-box;
 }
+.accent,
+.current {
+  content: '';
+  color: var(--accent-text-color);
+}
 
 .container {
   width: 1200px;
@@ -76,7 +81,7 @@ html {
   padding-right: 15px;
 }
 
-.section {
+.aside {
   align-items: center;
   text-align: center;
   padding-top: 94px;
@@ -106,12 +111,12 @@ html {
 .nav {
   display: flex;
 }
-.nav-line {
+.nav-item__line {
   position: relative;
   padding-bottom: 28px;
 }
 
-.nav-line::after {
+.nav-item__line::after {
   content: '';
 
   position: absolute;
@@ -125,29 +130,29 @@ html {
   transform: scaleX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-line:hover::after {
+.nav-item__line:hover::after {
   transform: scaleX(1);
 }
 
-.contact-list {
+.contact {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
 
-.header-item {
+.nav-item {
   margin-right: 50px;
   align-items: center;
 }
 
-.head-link {
+.nav-item__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
 }
 
-.contact-item {
+.contact-list {
   margin-right: 50px;
   display: flex;
 }
@@ -174,7 +179,8 @@ html {
   letter-spacing: 0.02em;
   color: inherit;
 }
-
+.current {
+}
 .contact-icons {
   margin-right: 10px;
 }
@@ -208,11 +214,6 @@ html {
 .contact-link:hover .contact-icons,
 .contact-link:focus .contact-icons {
   fill: var(--accent-text-color);
-}
-
-.accent,
-.current {
-  color: var(--accent-text-color);
 }
 
 /*hero*/
@@ -263,7 +264,7 @@ html {
   border: none;
 }
 
-.icon-wrapper {
+.feature-icon {
   width: 270px;
   height: 120px;
   display: flex;
@@ -307,29 +308,29 @@ html {
 
 /* section team*/
 
-.section-title {
+.aside-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   margin-bottom: 50px;
 }
 
-.image-list {
+.aside-list {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.image-item {
+.aside-item {
   width: 370px;
   padding-right: 30px;
   padding-top: 50px;
 }
-.image-link {
+.aside-image {
   text-align: center;
 }
-.image-item-link {
+.aside-item__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -353,11 +354,11 @@ html {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.image-item:not(:last-child) {
+.aside-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-team {
+.team-nav {
   display: flex;
 }
 
@@ -381,23 +382,23 @@ html {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list {
+.team-box__list {
   text-align: center;
 }
 
-.position-list {
+.team-box__item {
   margin-top: 10px;
   text-align: center;
 }
 
-.team-name {
+.team-box__name {
   font-size: 16px;
   font-weight: 500;
   line-height: calc(19 / 16);
   text-align: center;
 }
 
-.team-position {
+.team-box__position {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -408,7 +409,7 @@ html {
   padding: 30px;
 }
 
-.team-link {
+.team-social {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -429,12 +430,12 @@ html {
   background-color: var(--accent-text-color);
 }
 
-.team-icon {
+.social-icon {
   fill: #afb1b8;
 }
 
-.social-link:hover .team-icon,
-.social-link:focus .team-icon {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
   fill: var(--primary-bg-color);
 }
 .social-link {
@@ -552,7 +553,7 @@ html {
   color: var(--primary-bg-color);
 }
 
-.footer-nav-social {
+.footer-nav__social {
   margin-top: 20px;
 }
 
@@ -570,7 +571,7 @@ html {
   transform: translate();
 }
 
-.footer-nav-social {
+.footer-nav__social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -698,7 +699,7 @@ html {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-button {
+.work-item__button {
   color: var(--primary-bg-color);
   background-color: var(--accent-text-color);
   border: none;
@@ -921,19 +922,23 @@ html {
   padding: 6px 22px;
 }
 
-.portfolio .item:not(:nth-last-child(-n + 3)) {
+.portfolio-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 
-.portfolio .item:not(:nth-child(3n)) {
+.portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
 /* portfolio */
+.accent,
+.current {
+  color: var(--accent-text-color);
+}
 .current::after {
   transform: scaleX(1);
 }
-.item {
+.portfolio-item {
   border: 1px solid #eeeeee;
 }
 .portfolio-wrapper {
@@ -942,11 +947,11 @@ html {
   overflow: hidden;
 }
 
-.item-link:hover .item-text,
-.item-link:focus .item-text {
+.portfolio-item__link:hover .portfolio-wrapper__text,
+.portfolio-item__link:focus .portfolio-wrapper__text {
   transform: translateY(0);
 }
-.item-text {
+.portfolio-wrapper__text {
   position: absolute;
   justify-content: center;
   align-items: center;

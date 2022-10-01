@@ -22,17 +22,21 @@
         <nav class="navigation">
           <a href="./index.html" class="logo-link"> <span class="accent">Web</span>Studio </a>
           <ul class="nav">
-            <li class="header-item">
-              <a href="./index.html" class="nav-link current head-link nav-line">Студія</a>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link current nav-item__link nav-item__line"
+                >Студія</a
+              >
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="nav-link head-link">Портфоліо</a>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="nav-link nav-item__link">Портфоліо</a>
             </li>
-            <li class="header-item"><a href="" class="nav-link head-link nav-line">Контакти</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link nav-item__link nav-item__line">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contact-list">
-          <li class="contact-item">
+        <ul class="contact">
+          <li class="contact-list">
             <a class="contact-link" href="mailto:info@devstudio.com">
               <svg class="contact-icons" width="16" height="12">
                 <use href="./img/icons.svg#icon-mail"></use>
@@ -59,12 +63,12 @@
         </div>
       </section>
 
-      <section class="section feature">
+      <section class="feature">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="feature-list">
             <li class="feature-item">
-              <div class="icon-wrapper">
+              <div class="feature-icon">
                 <svg width="70" height="70">
                   <use href="./img/icons.svg#icon-antenna-1"></use>
                 </svg>
@@ -76,7 +80,7 @@
             </li>
 
             <li class="feature-item">
-              <div class="icon-wrapper">
+              <div class="feature-icon">
                 <svg width="70" height="70">
                   <use href="./img/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -88,7 +92,7 @@
             </li>
 
             <li class="feature-item">
-              <div class="icon-wrapper">
+              <div class="feature-icon">
                 <svg width="70" height="70">
                   <use href="./img/icons.svg#icon-diagram-1"></use>
                 </svg>
@@ -100,7 +104,7 @@
             </li>
 
             <li class="feature-item">
-              <div class="icon-wrapper">
+              <div class="feature-icon">
                 <svg width="70" height="70">
                   <use href="./img/icons.svg#icon-astronaut-1"></use>
                 </svg>
@@ -114,21 +118,21 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="aside">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="image-list">
-            <li class="image-item">
-              <img class="image-link" src="./img/about-1.jpg" alt="складання коду" width="370" />
-              <p class="image-item-link">Десктопні додатки</p>
+          <h2 class="aside-title">Чим ми займаємося</h2>
+          <ul class="aside-list">
+            <li class="aside-item">
+              <img class="aside-image" src="./img/about-1.jpg" alt="складання коду" width="370" />
+              <p class="aside-item__link">Десктопні додатки</p>
             </li>
-            <li class="image-item">
-              <img class="image-link" src="./img/about-2.jpg" alt="оформлення з css" width="370" />
-              <p class="image-item-link">Мобільні додатки</p>
+            <li class="aside-item">
+              <img class="aside-image" src="./img/about-2.jpg" alt="оформлення з css" width="370" />
+              <p class="aside-item__link">Мобільні додатки</p>
             </li>
-            <li class="image-item">
-              <img class="image-link" src="./img/about-3.jpg" alt="кольорова схема" width="370" />
-              <p class="image-item-link">Дизайнерські рішення</p>
+            <li class="aside-item">
+              <img class="aside-image" src="./img/about-3.jpg" alt="кольорова схема" width="370" />
+              <p class="aside-item__link">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -136,38 +140,38 @@
 
       <section class="team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="section-team">
+          <h2 class="aside-title">Наша команда</h2>
+          <ul class="team-nav">
             <li class="team-item">
               <img src="./img/team-1.jpg" alt="" width="270" />
               <div class="team-box">
-                <h3 class="team-name team-list">Ігор Дем'яненко</h3>
-                <p class="team-position position-list">Product Designer</p>
-                <ul class="team-link">
+                <h3 class="team-box__name team-box__list">Ігор Дем'яненко</h3>
+                <p class="team-box__position team-box__item">Product Designer</p>
+                <ul class="team-social">
                   <li>
                     <a class="social-link" href="https://www.instagram.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a class="social-link" href="https://www.twitter.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a class="social-link" href="https://www.facebook.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a class="social-link" href="https://www.linkedin.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
@@ -178,33 +182,33 @@
             <li class="team-item">
               <img src="./img/team-2.jpg" alt="" width="270" />
               <div class="team-box">
-                <h3 class="team-name team-list">Ольга Рєпіна</h3>
-                <p class="team-position position-list">Frontend Developer</p>
-                <ul class="team-link">
+                <h3 class="team-box__name team-box__list">Ольга Рєпіна</h3>
+                <p class="team-box__position team-box__item">Frontend Developer</p>
+                <ul class="team-social">
                   <li class="team-social">
                     <a class="social-link" href="https://www.instagram.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social">
                     <a class="social-link" href="https://www.twitter.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social">
                     <a class="social-link" href="https://www.facebook.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social">
                     <a class="social-link" href="https://www.linkedin.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
@@ -215,33 +219,33 @@
             <li class="team-item">
               <img src="./img/team-3.jpg" alt="" width="270" />
               <div class="team-box">
-                <h3 class="team-name team-list">Микола Тарасов</h3>
-                <p class="team-position position-list">Marketing</p>
-                <ul class="team-link">
+                <h3 class="team-box__name team-box__list">Микола Тарасов</h3>
+                <p class="team-box__position team-box__item">Marketing</p>
+                <ul class="team-social">
                   <li class="team-social">
                     <a class="social-link" href="https://www.instagram.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social">
                     <a class="social-link" href="https://www.twitter.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social">
                     <a class="social-link" href="https://www.facebook.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social">
                     <a class="social-link" href="https://www.linkedin.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
@@ -252,33 +256,33 @@
             <li class="team-item">
               <img src="./img/team-4.jpg" alt="" width="270" />
               <div class="team-box">
-                <h3 class="team-name team-list">Михайло Єрмаков</h3>
-                <p class="team-position position-list">UI Designer</p>
-                <ul class="team-link">
+                <h3 class="team-box__name team-box__list">Михайло Єрмаков</h3>
+                <p class="team-box__position team-box__item">UI Designer</p>
+                <ul class="team-social">
                   <li class="team-social">
                     <a class="social-link" href="https://www.instagram.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social">
                     <a class="social-link" href="https://www.twitter.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social">
                     <a class="social-link" href="https://www.facebook.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social">
                     <a class="social-link" href="https://www.linkedin.com/">
-                      <svg class="team-icon" width="20" height="20">
+                      <svg class="social-icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
@@ -291,7 +295,7 @@
       </section>
       <section class="clients">
         <div class="container">
-          <h2 class="section-title">Постійні клієнти</h2>
+          <h2 class="aside-title">Постійні клієнти</h2>
           <ul class="clients-title">
             <li class="clients-list">
               <a class="clients-link" href="">
@@ -425,7 +429,7 @@
         </div>
         <div class="footer-nav">
           <h3>ПРИЄДНУЙТЕСЬ</h3>
-          <ul class="footer-nav-social">
+          <ul class="footer-nav__social">
             <li class="footer-wapper">
               <a class="footer-link" href="https://www.instagram.com/">
                 <svg class="footer-icons" width="20" height="20">
