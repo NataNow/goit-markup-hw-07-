@@ -6,19 +6,3 @@
   line-height: calc(31 / 26);
   color: var(--logo-link);
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-text-color);
-}
-
-.nav-link .nav-link,
-.contakt-link {
-  font-weight: 500;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: inherit;
-}
-.accent,
-.current {
-  color: var(--accent-text-color);
-}

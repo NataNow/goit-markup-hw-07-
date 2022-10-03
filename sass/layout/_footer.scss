@@ -24,7 +24,7 @@
   margin-right: 70px;
 }
 .footer-link {
-  @extend flex;
+  @extend %flex;;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -63,10 +63,10 @@
   transform: translate();
 }
 .footer-nav__social {
-  @extend flex;
+  @extend %flex;;
 }
 .footer-icons {
-  @extend flex;
+  @extend %flex;;
 }
 .footer-contacts {
   color: var(--title-list-text-color);
