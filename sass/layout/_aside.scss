@@ -15,27 +15,28 @@
 .aside-item {
   width: 370px;
   padding-right: 30px;
+  &__image {
+    text-align: center;
+    justify-content: space-around;
+  }
+  &__link {
+    @extend %flex;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 370px;
+    height: 70px;
+    opacity: 0.5;
+    pointer-events: none;
+    color: var(--primary-bg-color);
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    transform: translateY(-105%);
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
-.aside-item__image {
-  text-align: center;
-  justify-content: space-around;
-}
-.aside-item__link {
-  @extend %flex;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-  width: 370px;
-  height: 70px;
-  opacity: 0.5;
-  pointer-events: none;
-  color: var(--primary-bg-color);
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  transform: translateY(-105%);
-  background: rgba(47, 48, 58, 0.8);
-}
+
 .aside-item:not(:last-child) {
   margin-right: 30px;
 }

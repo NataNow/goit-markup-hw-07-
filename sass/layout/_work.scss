@@ -18,17 +18,16 @@
   background-color: var(--accent-text-color);
   border: none;
 }
+
 .filter-btn {
   padding: 6px 22px;
-}
-.filter-btn {
   font-weight: 500;
   line-height: calc(26 / 16);
   text-align: center;
-  cursor: pointer;
   font-family: inherit;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {

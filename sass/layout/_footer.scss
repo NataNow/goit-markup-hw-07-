@@ -24,7 +24,7 @@
   margin-right: 70px;
 }
 .footer-link {
-  @extend %flex;;
+  @extend %flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -63,10 +63,10 @@
   transform: translate();
 }
 .footer-nav__social {
-  @extend %flex;;
+  @extend %flex;
 }
 .footer-icons {
-  @extend %flex;;
+  @extend %flex;
 }
 .footer-contacts {
   color: var(--title-list-text-color);
@@ -108,8 +108,8 @@
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   outline: none;
   background-color: var(--footer-bg-color);
   color: var(--bg-portf-color);
@@ -121,7 +121,7 @@
 .checkbox-custom {
   width: 16px;
   height: 15px;
-  font: var(--primary-text-color);
+  fill: var(--primary-text-color);
 }
 .checkbox-custom:focus-within {
   color: var(--primary-bg-color);
