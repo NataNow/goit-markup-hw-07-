@@ -48,6 +48,10 @@ html {
   color: var(--accent-text-color);
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -110,24 +114,17 @@ html {
   border: 1px solid rgba(51, 23, 23, 0.1);
 }
 
+.model-btn:hover,
+.model-btn:focus,
+.model-btn:focus-within {
+  fill: var(--accent-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .model-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 18px;
   height: 18px;
   margin: auto;
-}
-
-.model-icon:hover,
-.model-icon:focus,
-.model-icon:focus-within {
-  color: var(--accent-text-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea {
@@ -145,7 +142,7 @@ html {
 .textarea:focus-within {
   border-color: var(--accent-text-color);
   outline: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-submit {
@@ -158,6 +155,10 @@ html {
   border: none;
   margin: 0 auto;
   margin-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
 
 .btn-submit:hover,
@@ -224,6 +225,7 @@ html {
   height: 40px;
   font-size: 16px;
   padding-left: 40px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover,
@@ -231,7 +233,7 @@ html {
 .form-input:focus-within {
   border-color: var(--accent-text-color);
   outline: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field:focus-within > .form-icon {
@@ -265,12 +267,34 @@ html {
   border-bottom: 1px solid var(--accent-text-color);
 }
 
-.checkbox-custom {
-  border-color: var(title-text-color);
+.check {
+  display: flex;
+  align-items: center;
 }
 
-.checkbox-custom-label {
-  margin-left: 7px;
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__input:checked + .check__icon {
+  border-color: transparent;
+  background-color: var(--accent-text-color);
+  background-image: url(../../img/icons.svg#icon-icon-check);
+  fill: var(--primary-bg-color);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.check__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 4px;
+  padding-right: 7px;
 }
 
 .hero {
@@ -416,7 +440,7 @@ html {
 }
 .contact-list-icons {
   margin-right: 10px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover,
@@ -425,7 +449,7 @@ html {
 }
 
 .contact {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -593,7 +617,7 @@ html {
 }
 
 .team-social__link {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -606,7 +630,7 @@ html {
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
   color: var(--title-list-text-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list__icon {
   width: 106px;
@@ -724,7 +748,7 @@ html {
 }
 
 .filter-btn {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -779,7 +803,7 @@ html {
 }
 
 .footer-link {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-nav {
@@ -801,7 +825,6 @@ html {
   margin-right: 10px;
   width: 44px;
   height: 44px;
-  transform: translate();
 }
 
 .footer-contacts {
@@ -815,7 +838,7 @@ html {
 }
 
 .footer-contacts {
-  transition: all translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-data {
@@ -912,7 +935,7 @@ html {
   --bg-portf-color: #f5f5f5;
 }
 
-.btn-submit, .form, .form-condition, .feature-item__icon, .aside, .aside-item__link, .team-social__link, .clients-title, .clients-list, .portfolio-wrapper__text, .footer-link, .footer-nav__social, .footer-icons {
+.model-btn, .btn-submit, .form, .form-condition, .feature-item__icon, .aside, .aside-item__link, .team-social__link, .clients-title, .clients-list, .portfolio-wrapper__text, .footer-link, .footer-nav__social, .footer-icons {
   display: flex;
   justify-content: center;
   align-items: center;
