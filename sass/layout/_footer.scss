@@ -16,13 +16,17 @@
   font-family: var(--secondary-ff);
 }
 .footer-adres {
-  line-height: 1.71;
-  font-style: normal;
+  font-weight: 400;
+  line-height: calc(24 / 14);
+  color: var(--primary-bg-color);
+  font-weight: 400;
   list-style: none;
+  font-style: normal;
   width: 231px;
   margin-top: 20px;
   margin-right: 70px;
 }
+
 .footer-link {
   @extend %flex;
   width: 44px;
@@ -68,8 +72,11 @@
   @extend %flex;
 }
 .footer-contacts {
-  color: var(--title-list-text-color);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
 }
 .footer-contacts:focus,
 .footer-contacts:hover {

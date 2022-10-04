@@ -52,6 +52,11 @@ button {
   cursor: pointer;
 }
 
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -333,6 +338,8 @@ button {
   border-radius: 4px;
   text-align: center;
   margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-button {
@@ -341,7 +348,7 @@ button {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
   padding: 10px 32px;
@@ -401,8 +408,7 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link,
-.contakt-link {
+.nav-link {
   font-weight: 500;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
@@ -428,20 +434,17 @@ button {
 }
 
 .contact {
-  display: flex;
   margin-left: auto;
-  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-list {
   margin-right: 50px;
-  display: flex;
-}
-.contact-list-link {
-  display: flex;
-  align-items: center;
   color: var(--title-list-text-color);
-  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
 }
 .contact-list-icons {
   margin-right: 10px;
@@ -492,6 +495,7 @@ button {
   width: 270px;
   height: 120px;
   border-radius: 4px;
+  background-color: #f5f4fa;
 }
 .feature-item__title {
   font-size: 14px;
@@ -504,11 +508,6 @@ button {
   font-size: 14px;
   line-height: 1.71;
   color: var(--title-list-text-color);
-}
-
-.aside {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .aside-list {
@@ -537,7 +536,6 @@ button {
   white-space: nowrap;
   width: 370px;
   height: 70px;
-  opacity: 0.5;
   pointer-events: none;
   color: var(--primary-bg-color);
   font-weight: 700;
@@ -570,8 +568,16 @@ button {
   background-color: var(--bg-portf-color);
 }
 
+.team-nav__item {
+  padding-bottom: 30px;
+}
+
 .team-nav__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-social:not(:last-child) {
+  margin-left: 10px;
 }
 
 .team-box__list {
@@ -583,6 +589,7 @@ button {
   font-weight: 500;
   line-height: 1.1875;
   text-align: center;
+  padding-top: 30px;
 }
 
 .team-box__position {
@@ -590,24 +597,14 @@ button {
   line-height: 1.1875;
   text-align: center;
   color: var(--title-list-text-color);
-}
-
-.team-box {
-  padding: 30px;
-}
-
-.social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 16px;
+  padding-top: 10px;
 }
 
 .team-social__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--title-list-text-color);
+  fill: #afb1b8;
 }
 
 .team-social__link:hover,
@@ -622,10 +619,6 @@ button {
 
 .team-social__link {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients {
-  padding-bottom: 94px;
 }
 
 .clients-list {
@@ -698,8 +691,9 @@ button {
   padding: 20px;
 }
 .portfolio-box__project {
+  font-weight: 400;
   font-size: 18px;
-  line-height: 1.6666666667;
+  line-height: 2;
   color: var(--title-text-color);
 }
 .portfolio-box__text {
@@ -736,7 +730,9 @@ button {
 .filter-btn {
   padding: 6px 22px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.625;
+  color: var(--primary-text-color);
   text-align: center;
   font-family: inherit;
   border: none;
@@ -777,9 +773,12 @@ button {
 }
 
 .footer-adres {
-  line-height: 1.71;
-  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7142857143;
+  color: var(--primary-bg-color);
+  font-weight: 400;
   list-style: none;
+  font-style: normal;
   width: 231px;
   margin-top: 20px;
   margin-right: 70px;
@@ -832,8 +831,11 @@ button {
 }
 
 .footer-contacts {
-  color: var(--title-list-text-color);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
 }
 
 .footer-contacts:focus,
@@ -939,7 +941,7 @@ button {
   --bg-portf-color: #f5f5f5;
 }
 
-.model-btn, .btn-submit, .form, .check, .check__box, .feature-item__icon, .aside, .aside-item__link, .team-social__link, .clients-title, .clients-list, .portfolio-wrapper__text, .footer-link, .footer-nav__social, .footer-icons {
+.model-btn, .btn-submit, .form, .check, .check__box, .contact, .feature-item__icon, .aside, .aside-item__link, .social, .team-social__link, .clients-title, .clients-list, .portfolio-wrapper__text, .footer-link, .footer-nav__social, .footer-icons {
   display: flex;
   justify-content: center;
   align-items: center;

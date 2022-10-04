@@ -1,15 +1,12 @@
 .social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 16px;
+  @extend %flex;
 }
 .team-social__link {
   @extend %flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--title-list-text-color);
+  fill: #afb1b8;
 }
 .team-social__link:hover,
 .team-social__link:focus {
