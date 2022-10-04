@@ -392,23 +392,22 @@
 
             <div class="form-field">
               <label class="form-label" for="coment">Коментар</label>
-              <textarea
-                class="textarea"
-                id="coment"
-                cols="10"
-                rows="10"
-                placeholder="Введіть текст"
-              ></textarea>
+              <textarea class="textarea" id="coment" placeholder="Введіть текст"></textarea>
             </div>
 
-            <div class="form-condition">
-              <label class="check">
-                <input class="check__input" type="checkbox" />
-                <span class="check__icon"></span>
+            <label class="check">
+              <input class="check__input hidden" type="checkbox" />
+              <span class="check__box">
+                <svg class="check__icon" width="16" height="15">
+                  <use href="./img/icons.svg#check"></use>
+                </svg>
+              </span>
+              <span class="check__text">
                 Погоджуюся з розсилкою та приймаю
                 <a href="" class="form-span">Умови договору</a>
-              </label>
-            </div>
+              </span>
+            </label>
+
             <button class="btn-submit" type="submit">Відправити</button>
           </form>
           <button class="model-btn" data-modal-close>
