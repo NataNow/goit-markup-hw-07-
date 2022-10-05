@@ -2,7 +2,7 @@
   @extend %flex;
   padding-top: 16px;
 }
-.team-social__link {
+.social__link {
   @extend %flex;
   width: 44px;
   height: 44px;
@@ -21,6 +21,6 @@
 .social__link:focus .social__icon {
   fill: var(--primary-bg-color);
 }
-.team-social__link {
+.social__link {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
