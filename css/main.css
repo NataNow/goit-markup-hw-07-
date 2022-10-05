@@ -1,3 +1,35 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --title-list-text-color: #757575;
+  --secondary-ff: "Raleway", sans-serif;
+  --primary-ff: "Roboto", sans-serif;
+  --footer-bg-color: #2f303a;
+  --logo-link: #000000;
+  --bg-portf-color: #f5f5f5;
+}
+
+.footer-icons, .footer-nav__social, .footer-link, .portfolio-wrapper__text, .clients-list, .clients-title, .team-social__link, .social, .aside-item__link, .aside, .feature-item__icon, .check__box, .check, .form, .btn-submit, .model-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: var(--primary-ff);
   background-color: var(--primary-bg-color);
@@ -938,36 +970,4 @@ section {
 .location {
   color: var(--primary-bg-color);
   text-decoration: none;
-}
-
-:root {
-  --primary-text-color: #212121;
-  --title-text-color: #212121;
-  --accent-text-color: #2196f3;
-  --primary-bg-color: #ffffff;
-  --title-list-text-color: #757575;
-  --secondary-ff: "Raleway", sans-serif;
-  --primary-ff: "Roboto", sans-serif;
-  --footer-bg-color: #2f303a;
-  --logo-link: #000000;
-  --bg-portf-color: #f5f5f5;
-}
-
-.model-btn, .btn-submit, .form, .check, .check__box, .feature-item__icon, .aside, .aside-item__link, .social, .team-social__link, .clients-title, .clients-list, .portfolio-wrapper__text, .footer-link, .footer-nav__social, .footer-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
