@@ -1,7 +1,7 @@
-.clients-title {
+.clients__list {
   @extend %flex;
 }
-.clients-list {
+.clients__item {
   @extend %flex;
   width: 170px;
   height: 92px;
@@ -16,11 +16,11 @@
   }
 }
 
-.clients-list:nth-child(n-6) {
+.clients__item:nth-child(n-6) {
   margin-right: 30px;
 }
-.clients-list .clients-list__link:hover,
-.clients-list__link:focus {
+.clients__item .clients__link:hover,
+.clients__link:focus {
   color: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
