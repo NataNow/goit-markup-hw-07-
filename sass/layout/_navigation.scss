@@ -9,7 +9,7 @@
   padding-bottom: 28px;
 }
 
-.nav-item {
+.nav-item:not(last-child) {
   margin-right: 50px;
   align-items: center;
 }
